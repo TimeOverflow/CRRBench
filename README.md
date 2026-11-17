@@ -9,7 +9,7 @@ A contract risk identification benchmark for a designated party, intended for pa
 - A designated review party for each contract, with 800 contract-review-point binary labels: 130 `有风险` (risk identified) and 670 `无风险` (no risk identified).
 - 32 contracts with at least one positive label and 8 contracts with only negative labels.
 
-## Data Description
+## 📊 Data Description
 
 `有风险` means that the contract triggers the corresponding review point from the designated party's perspective. The dataset provides only contract-level binary labels, without evidence spans, item-level explanations, or severity annotations.
 
@@ -24,7 +24,7 @@ A contract risk identification benchmark for a designated party, intended for pa
 | Goods and Equipment Transactions (`货物与设备交易`) | 5 | 11 |
 | Finance and Asset Transactions (`金融与资产交易`) | 5 | 11 |
 
-## Directory Structure and Data Format
+## 📁 Directory Structure and Data Format
 
 ```text
 .
@@ -64,7 +64,7 @@ Each row represents one contract and contains 28 columns: 8 metadata or summary 
 | `风险条数` | Number of `有风险` labels, ranging from 0 to 7 |
 | `命中审查点` | Positive review point titles separated by Chinese semicolons (`；`); empty if none |
 
-## Loading the Data
+## 🚀 Loading the Data
 
 The following example runs from the repository root and uses only the Python standard library:
 
@@ -94,7 +94,7 @@ reference_labels = {
 
 Model inputs consist of the contract text, designated party, and review rules. Do not include `风险条数`, `命中审查点`, or any reference labels in the input. Record missing or unparseable outputs as failures instead of silently assigning negative labels.
 
-## Local Validation
+## ✅ Local Validation
 
 Python 3.10+ and `uv` are required. No third-party Python dependencies are needed. Run from the repository root:
 
@@ -110,6 +110,6 @@ Current data fingerprint:
 6ea9b684ee31c42c460a611ddbcf547b8ed62b2a9f9c459ebd9265305cd12de1
 ```
 
-## License
+## 📜 License
 
 This dataset is provided for academic research purposes only. The code in this repository is released under the MIT License. See the LICENSE file for details.
