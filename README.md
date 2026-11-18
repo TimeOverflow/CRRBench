@@ -1,7 +1,5 @@
 # Contract Review Dataset
 
-[Chinese documentation](README_zh.md)
-
 A contract risk identification benchmark for a designated party, intended for paper reproduction and method comparison. The data is based on real contracts that have been de-identified or adapted. This repository provides a sample of the full dataset.
 
 - 40 English Markdown contracts across 8 business categories, with 5 contracts per category.
@@ -29,7 +27,6 @@ A contract risk identification benchmark for a designated party, intended for pa
 ```text
 .
 ├── README.md                              # English documentation
-├── README_zh.md                           # Chinese documentation
 ├── contract_general_review_points.json    # 20 review rules
 ├── risk_labels.csv                        # Contract metadata and labels
 ├── contract_texts/                        # 8 category directories, 5 contracts each
