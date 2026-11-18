@@ -14,7 +14,7 @@
 | 业务类别 | 合同数 | 正标签数 |
 | --- | ---: | ---: |
 | Real Estate and Site Use | 5 | 18 |
-| Special-Purpose and Other Agreements | 5 | 13 |
+| Special-Purpose Agreements and Other | 5 | 13 |
 | Platform and Channel Partnerships | 5 | 16 |
 | Advertising and Marketing | 5 | 21 |
 | Technology and Intellectual Property | 5 | 21 |

@@ -1,22 +1,22 @@
 # Contract Review Dataset
 
-[中文版](README_zh.md)
+[Chinese documentation](README_zh.md)
 
 A contract risk identification benchmark for a designated party, intended for paper reproduction and method comparison. The data is based on real contracts that have been de-identified or adapted. This repository provides a sample of the full dataset.
 
 - 40 English Markdown contracts across 8 business categories, with 5 contracts per category.
 - 20 review points, including their scope, triggering conditions, and exemptions.
-- A designated review party for each contract, with 800 contract-review-point binary labels: 130 `有风险` (risk identified) and 670 `无风险` (no risk identified).
+- A designated review party for each contract, with 800 contract-review-point binary labels: 130 `Risk identified` and 670 `No risk identified`.
 - 32 contracts with at least one positive label and 8 contracts with only negative labels.
 
 ## 📊 Data Description
 
-`有风险` means that the contract triggers the corresponding review point from the designated party's perspective. The dataset provides only contract-level binary labels, without evidence spans, item-level explanations, or severity annotations.
+`Risk identified` means that the contract triggers the corresponding review point from the designated party's perspective. The dataset provides only contract-level binary labels, without evidence spans, item-level explanations, or severity annotations.
 
-| Business Category | Contracts | Positive Labels |
+| Scenario | Contracts | Positive Labels |
 | --- | ---: | ---: |
 | Real Estate and Site Use | 5 | 18 |
-| Special-Purpose and Other Agreements | 5 | 13 |
+| Special-Purpose Agreements and Other | 5 | 13 |
 | Platform and Channel Partnerships | 5 | 16 |
 | Advertising and Marketing | 5 | 21 |
 | Technology and Intellectual Property | 5 | 21 |
@@ -44,25 +44,25 @@ Each object contains:
 
 | Field | Description |
 | --- | --- |
-| `审查点标题` | Unique review point identifier |
-| `审查点描述` | Scope, decision steps, triggering conditions, and exemptions |
-| `备注` | Optional configuration notes |
+| `Review Point Title` | Unique review point identifier |
+| `Review Point Description` | Scope, decision steps, triggering conditions, and exemptions |
+| `Note` | Optional configuration notes |
 
-The asterisks in `保密条款*` and `争议解决*` are part of the titles. The `指定主体字样` placeholder in `禁止对外发布条款` must be configured by users; no specific keyword is provided. Some rules involve contextual information such as corporate group relationships, which must not be inferred or fabricated when absent from the data.
+The `Specified Entity Wording` placeholder in `Prohibition of external publication` must be configured by users; no specific keyword is provided. Some rules involve contextual information such as corporate group relationships, which must not be inferred or fabricated when absent from the data.
 
 ### Label CSV
 
-Each row represents one contract and contains 28 columns: 8 metadata or summary fields and 20 review label fields. Label columns are named `规则_<审查点标题>` and contain either `有风险` or `无风险`.
+Each row represents one contract and contains 28 columns: 8 metadata or summary fields and 20 review label fields. Label columns are named `Rule_<Review Point Title>` and contain either `Risk identified` or `No risk identified`.
 
 | Field | Description |
 | --- | --- |
-| `序号` | Unique sample ID, currently 1–40 |
-| `标的大类` | Business category, matching the category directory in the file path |
-| `合同名` | Display name; it need not exactly match the filename or contract title |
-| `文件名` | Relative contract path in the format `contract_texts/<category>/<contract_name>.md` |
-| `立场方`, `立场方角色` | The party whose interests are being reviewed and its role; both are model inputs |
-| `风险条数` | Number of `有风险` labels, ranging from 0 to 7 |
-| `命中审查点` | Positive review point titles separated by Chinese semicolons (`；`); empty if none |
+| `ID` | Unique sample ID, currently 1–40 |
+| `Scenario` | Business scenario, matching the category directory in the file path |
+| `Contract Name` | Contract name, matching the filename without the `.md` extension |
+| `File Path` | Relative contract path in the format `contract_texts/<scenario>/<contract_name>.md` |
+| `Review Party`, `Review Party Role` | The party whose interests are being reviewed and its role; both are model inputs |
+| `Risk Count` | Number of `Risk identified` labels, ranging from 0 to 7 |
+| `Matched Review Points` | Positive review point titles separated by full-width semicolons (`；`); empty if none |
 
 ## 🚀 Loading the Data
 
@@ -81,18 +81,18 @@ with (root / "risk_labels.csv").open(encoding="utf-8-sig", newline="") as source
     record = next(csv.DictReader(source))
 
 sample = {
-    "contract_text": (root / record["文件名"]).read_text(encoding="utf-8"),
-    "review_party": record["立场方"],
-    "review_party_role": record["立场方角色"],
+    "contract_text": (root / record["File Path"]).read_text(encoding="utf-8"),
+    "review_party": record["Review Party"],
+    "review_party_role": record["Review Party Role"],
     "review_points": review_points,
 }
 reference_labels = {
-    point["审查点标题"]: int(record[f"规则_{point['审查点标题']}"] == "有风险")
+    point["Review Point Title"]: int(record[f"Rule_{point['Review Point Title']}"] == "Risk identified")
     for point in review_points
 }
 ```
 
-Model inputs consist of the contract text, designated party, and review rules. Do not include `风险条数`, `命中审查点`, or any reference labels in the input. Record missing or unparseable outputs as failures instead of silently assigning negative labels.
+Model inputs consist of the contract text, designated party, and review rules. Do not include `Risk Count`, `Matched Review Points`, or any reference labels in the input. Record missing or unparseable outputs as failures instead of silently assigning negative labels.
 
 ## ✅ Local Validation
 
@@ -102,12 +102,12 @@ Python 3.10+ and `uv` are required. No third-party Python dependencies are neede
 uv run scripts/validate_dataset.py
 ```
 
-The read-only script checks fields, paths, file associations, rule-label consistency, and the consistency of `风险条数` and `命中审查点`. It returns `0` on success and prints statistics and a SHA-256 data fingerprint; it returns `1` on failure. It does not modify files or call external APIs. It does not verify the legal correctness of labels, adequacy of de-identification, or authorization for publication.
+The read-only script checks fields, paths, file associations, rule-label consistency, and the consistency of `Risk Count` and `Matched Review Points`. It returns `0` on success and prints statistics and a SHA-256 data fingerprint; it returns `1` on failure. It does not modify files or call external APIs. It does not verify the legal correctness of labels, adequacy of de-identification, or authorization for publication.
 
 Current data fingerprint:
 
 ```text
-e4e92b26ebc161819e0ec106ee2fe036be14766f36c9295ef1eb6c13deb2db73
+7c8b78b0a0441f8d1477d680a35e126c9a387c5888e5488b33352b7c97fd2b15
 ```
 
 ## 📜 License
