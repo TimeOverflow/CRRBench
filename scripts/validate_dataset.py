@@ -14,14 +14,14 @@ CONTRACT_TEXTS_DIRECTORY = "contract_texts"
 EXPECTED_CONTRACT_COUNT = 40
 EXPECTED_REVIEW_POINT_COUNT = 20
 CONTRACT_DIRECTORIES = (
-    "不动产与场地使用",
-    "专项协议与其他",
-    "平台与渠道合作",
-    "广告与营销推广",
-    "技术与知识产权",
-    "服务与工程",
-    "货物与设备交易",
-    "金融与资产交易",
+    "Real Estate and Site Use",
+    "Special-Purpose and Other Agreements",
+    "Platform and Channel Partnerships",
+    "Advertising and Marketing",
+    "Technology and Intellectual Property",
+    "Services and Engineering",
+    "Goods and Equipment Transactions",
+    "Finance and Asset Transactions",
 )
 METADATA_COLUMNS = (
     "序号",

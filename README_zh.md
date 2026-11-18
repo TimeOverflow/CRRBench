@@ -2,7 +2,7 @@
 
 面向指定立场方的合同风险识别评测集，可用于论文复现和方法比较。数据基于真实合同，经脱敏或改写构建。本仓库提供的是完整数据集的采样示例。
 
-- 40 份 Markdown 合同，覆盖 8 类业务，每类 5 份；含中文、英文及中英双语文本。
+- 40 份英文 Markdown 合同，覆盖 8 类业务，每类 5 份。
 - 20 个审查点，包含适用范围、触发条件和豁免条件。
 - 每份合同指定立场方，共 800 个合同—审查点二元标签：130 个“有风险”、670 个“无风险”。
 - 32 份合同含正标签，8 份合同全为负标签。
@@ -13,14 +13,14 @@
 
 | 业务类别 | 合同数 | 正标签数 |
 | --- | ---: | ---: |
-| 不动产与场地使用 | 5 | 18 |
-| 专项协议与其他 | 5 | 13 |
-| 平台与渠道合作 | 5 | 16 |
-| 广告与营销推广 | 5 | 21 |
-| 技术与知识产权 | 5 | 21 |
-| 服务与工程 | 5 | 19 |
-| 货物与设备交易 | 5 | 11 |
-| 金融与资产交易 | 5 | 11 |
+| Real Estate and Site Use | 5 | 18 |
+| Special-Purpose and Other Agreements | 5 | 13 |
+| Platform and Channel Partnerships | 5 | 16 |
+| Advertising and Marketing | 5 | 21 |
+| Technology and Intellectual Property | 5 | 21 |
+| Services and Engineering | 5 | 19 |
+| Goods and Equipment Transactions | 5 | 11 |
+| Finance and Asset Transactions | 5 | 11 |
 
 ## 📁 目录与数据格式
 
@@ -105,7 +105,7 @@ uv run scripts/validate_dataset.py
 当前数据指纹：
 
 ```text
-6ea9b684ee31c42c460a611ddbcf547b8ed62b2a9f9c459ebd9265305cd12de1
+e4e92b26ebc161819e0ec106ee2fe036be14766f36c9295ef1eb6c13deb2db73
 ```
 
 ## 📜 许可

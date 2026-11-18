@@ -1,0 +1,31 @@
+Procurement Agreement
+
+This Procurement Agreement (hereinafter referred to as "this Agreement") is composed of the Procurement Agreement, the corresponding product service agreement and all annexes signed by the two parties, and has the same legal effect.
+
+| Party A: Jiahui Real Estate (Sales and Leasing) Agency Co., Ltd. |  | Party B: Star Eagle Digital Technology Co., Ltd. |
+| --- | --- | --- |
+| Party A is the operator of the [Hong Kong Causeway Bay Times Square and Hong Kong Tsuen Wan Yuelai Mall] project. Party B is authorized (see [Annex 1 Power of Attorney]) to operate Star Eagle Map commercial products, and Party A purchases products or services under this Agreement from Party B. |  |  |
+| Purchase instructions | Party A orders the [Integrated Smart Commercial District Wang MALL] [Indoor Map] service from Party B. |  |
+| Purchasing details | The [Integrated Smart Commercial District Wang MALL] and [Indoor Map] products and services are valid for one year: from March 1, 2026 through February 28, 2027 for Times Square in Causeway Bay, Hong Kong, and from April 1, 2026 through March 31, 2027 for Yuelai Shopping Mall in Tsuen Wan, Hong Kong. The information displayed in Party B's system when Party A uses the specific product shall govern. The total fees (inclusive of tax) for [Integrated Smart Commercial District Wang MALL] and [Indoor Map] for both malls are RMB 160,000, or RMB 80,000 per mall. Party B shall provide Smart Commercial District Wang MALL services, including modules for store fit-out, marketing and management, and shall assist Party A in updating the merchant lists for Wang MALL and Indoor Map once per quarter. Party B shall complete and deliver the update within 15 working days after Party A sends a compliant update request by email. See Appendix 2, FY26 Smart Commercial District Product Features, [Appendix 3, Smart Commercial District Wang MALL Product Service Agreement], and [Appendix 4, Indoor Map Product Service Agreement], for the remaining service details and the parties' rights and obligations. |  |
+| Fees and Billing | The total purchase price for the services under this Agreement is RMB 160,000 for both malls, in words: One Hundred Sixty Thousand Renminbi Only. [Times Square in Causeway Bay, Hong Kong] and [Yuelai Shopping Mall in Tsuen Wan, Hong Kong] shall each pay Party B RMB 80,000. Party A shall pay the full service fee of HKD 160,000 to Party B in a single bank transfer within 15 working days after this Agreement is executed and takes effect. The foregoing is the net service fee payable to Party B and excludes all taxes and charges that Party A must pay under the rules of its country or region, including VAT, consumption tax, income tax, tax surcharges and related processing fees. Party A shall bear any applicable taxes and charges. |  |
+| Notes | 1.Party A shall be responsible for the content of Party B's product display to ensure that it meets the requirements of laws and regulations. 2. If the service time provided by Party B is not in accordance with the agreement, Party B shall extend the service period and compensate Party A in the same amount. 3. Party A shall accept the service within 7 natural days from the date of Party B's notification of acceptance confirmation. If Party A fails to confirm in writing (including e-mail) within 7 natural days of receiving the written (including e-mail) settlement report sent by Party B, Party A shall be deemed to have passed the acceptance. |  |
+| Effectiveness of the Order | 1.This Procurement Agreement takes effect when both parties affix their seals and terminates when the services are complete and all amounts due have been paid in full. 2. This Order is executed in two originals of equal legal effect, one for each party. |  |
+| Party A Account Information Account Name: Jiahui Real Estate (Sales and Leasing) Agency Co., Ltd. Company Address: Room 1203, 12th Floor, Jiahui Commercial Building, 88 Nathan Road, Tsim Sha Tsui, Kowloon, Hong Kong |  | Party B Account Information Account Name: Xingying Shuzhi Technology Co., Ltd. Account Opening Bank: Beijing Zhongguancun Branch of Industrial and Commercial Bank of China Co., Ltd. Account Number: 0200003509200188872 Company Address: Xingying Building, No. 12 Zhongguancun South Street, Haidian District, Beijing Bank Name: Beijing Zhongguancun Branch of Industrial and Commercial Bank of China Co., Ltd. |
+| Party A (Seal): Jiahui Real Estate (Sales and Leasing) Agency Co., Ltd. Contact Address: Room 1203, 12th Floor, Jiahui Commercial Building, No. 88 Nathan Road, Tsim Sha Tsui, Kowloon, Hong Kong Contact: Huang Jiajun Contact Email: kaywong@kahui-property.cc Tel: 85292345678 |  | Party B (Seal): Xingying Digital Intelligence Technology Co., Ltd. Contact Address: Xingying Building, No. 12 Zhongguancun South Street, Haidian District, Beijing Contact: Song Jianing Contact Email: songjianing@xingying-digital.example.cn Tel: 010-84778000, 18634567890 |
+
+Annex 2: "FY26 Smart Business Circle Product Function Description"
+
+| Module | Feature | Description |
+| --- | --- | --- |
+| Consumer-Facing Display | Official logo | "Brand Direct" and other official brand labels |
+| Search and push traffic weighting | Paid shopping malls will get traffic weighting in search/recommendation scenarios. |  |
+| The store is rich in content. | Focus card background | The golden background of the focus card area on the details page |
+| Photo Gallery | Head picture pin, video display, album upload display |  |
+| Bubbles on the picture | Logo bubble/content bubble, with jump link |  |
+| Instant Messaging Inquiries | Users can consult about shopping malls online through IM |  |
+| Merchant management platform | Permission management | Create/manage organizations at all levels for graded management |
+| Decoration function | Album management | Single store setting album picture and head picture pin top, video |
+| Comment management | Reply to user comments |  |
+| My store | Store management | Modify store information (name, address, telephone number, business hours, etc.) |
+| Management staff | Store analysis | View or download data by mall (exposure/access/click/navigation, etc.) |
+| Audience Analytics | View data such as basic attributes and interest preferences of exposure/visiting users |  |

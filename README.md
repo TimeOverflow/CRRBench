@@ -4,7 +4,7 @@
 
 A contract risk identification benchmark for a designated party, intended for paper reproduction and method comparison. The data is based on real contracts that have been de-identified or adapted. This repository provides a sample of the full dataset.
 
-- 40 Markdown contracts across 8 business categories, with 5 contracts per category, including Chinese, English, and bilingual Chinese-English texts.
+- 40 English Markdown contracts across 8 business categories, with 5 contracts per category.
 - 20 review points, including their scope, triggering conditions, and exemptions.
 - A designated review party for each contract, with 800 contract-review-point binary labels: 130 `有风险` (risk identified) and 670 `无风险` (no risk identified).
 - 32 contracts with at least one positive label and 8 contracts with only negative labels.
@@ -15,14 +15,14 @@ A contract risk identification benchmark for a designated party, intended for pa
 
 | Business Category | Contracts | Positive Labels |
 | --- | ---: | ---: |
-| Real Estate and Premises Use (`不动产与场地使用`) | 5 | 18 |
-| Special-purpose Agreements and Other (`专项协议与其他`) | 5 | 13 |
-| Platform and Channel Partnerships (`平台与渠道合作`) | 5 | 16 |
-| Advertising and Marketing (`广告与营销推广`) | 5 | 21 |
-| Technology and Intellectual Property (`技术与知识产权`) | 5 | 21 |
-| Services and Engineering (`服务与工程`) | 5 | 19 |
-| Goods and Equipment Transactions (`货物与设备交易`) | 5 | 11 |
-| Finance and Asset Transactions (`金融与资产交易`) | 5 | 11 |
+| Real Estate and Site Use | 5 | 18 |
+| Special-Purpose and Other Agreements | 5 | 13 |
+| Platform and Channel Partnerships | 5 | 16 |
+| Advertising and Marketing | 5 | 21 |
+| Technology and Intellectual Property | 5 | 21 |
+| Services and Engineering | 5 | 19 |
+| Goods and Equipment Transactions | 5 | 11 |
+| Finance and Asset Transactions | 5 | 11 |
 
 ## 📁 Directory Structure and Data Format
 
@@ -107,7 +107,7 @@ The read-only script checks fields, paths, file associations, rule-label consist
 Current data fingerprint:
 
 ```text
-6ea9b684ee31c42c460a611ddbcf547b8ed62b2a9f9c459ebd9265305cd12de1
+e4e92b26ebc161819e0ec106ee2fe036be14766f36c9295ef1eb6c13deb2db73
 ```
 
 ## 📜 License
